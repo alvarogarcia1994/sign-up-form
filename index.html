@@ -43,44 +43,51 @@
                 <!-- Central section of the page contains a form to validate -->
                 <section class="center"> 
                     <h2>Let's do this!</h2>
-                    <form id="form" action="#" method="post">
+                    <form id="form" action="" method="get">
                         
                         <div class="form-group">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name" required>
+                            <input type="text" id="first-name" name="first-name" placeholder=" " required>
+                            <span class="error-msg">You must fill this field.</span>
                         </div>
                             
                         <div class="form-group">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name" required>
+                            <input type="text" id="last-name" name="last-name" placeholder=" " required>
+                            <span class="error-msg">You must fill this field</span>
                         </div>
                             
                         <div class="form-group">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <span class="error-msg">Write a valid email</span>
                         </div>
                             
                         <div class="form-group">
                             <label for="phone-number">PHONE NUMBER</label>
-                            <input type="tel" id="phone-number" name="phone-number">
+                            <input type="tel" name="phone-number" pattern="[0-9]{9,}" placeholder=" " required>
+                            <span class="error-msg">Write a valid phone number (at least 9 characters)</span>
                         </div>
 
                         <div class="form-group">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" required>
+                            <input type="password" id="password" name="password" minlength="6" placeholder=" " required>
+                            <span class="error-msg">Password length must be of 6 or more characters</span>
                         </div>
 
                         <div class="form-group">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirm-password" required>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder=" " required>
+                            <span class="error-msg">The passwords must match</span>
                         </div>
+
                     </form>
                 </section>
                 <!-- End of central section -->
                 
                 <!-- Bottom section: contains a button to send the form -->
                 <section class="bottom">
-                    <button>
+                    <button type="submit" form="form">
                         Create Account
                     </button>
 
@@ -93,6 +100,9 @@
         
         <!-- End of container of the page -->
         </div>
+
+        <!-- JS Script to validate password matching -->
+        <script src="js/script.js"></script>
 
     </body>
 
