@@ -82,7 +82,7 @@ body, html{
 
 /* Right side of the page */
 .right{
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   width: 65%;
@@ -161,7 +161,7 @@ body, html{
 
 /* Form fields styles */
 .form-group input{
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .form-group input:focus{
@@ -194,7 +194,7 @@ body, html{
 
 /* Sumbit button styles */
 .bottom button{
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 200px;
   padding: 12px 30px;
   background-color: #596D48;
